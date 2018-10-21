@@ -7,12 +7,56 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/resultView"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_marginBottom="68dp"
+        android:text="Longitude : Latitude :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/computeButton"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/computeButton" />
+
+    <EditText
+        android:id="@+id/wpLongitudeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Waypoint Longitude"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
 
+    <EditText
+        android:id="@+id/wpLatitudeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Waypoint Latitude"
+        app:layout_constraintBottom_toTopOf="@+id/computeButton"
+        app:layout_constraintEnd_toEndOf="@+id/wpLongitudeText"
+        app:layout_constraintStart_toStartOf="@+id/wpLongitudeText"
+        app:layout_constraintTop_toBottomOf="@+id/wpLongitudeText" />
+
+    <Button
+        android:id="@+id/computeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginBottom="48dp"
+        android:text="Compute Vector"
+        android:onClick="computeVector"
+        app:layout_constraintBottom_toTopOf="@+id/resultView"
+        app:layout_constraintEnd_toEndOf="@+id/wpLatitudeText"
+        app:layout_constraintStart_toStartOf="@+id/wpLatitudeText" />
 </android.support.constraint.ConstraintLayout>
