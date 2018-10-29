@@ -59,4 +59,41 @@
         app:layout_constraintBottom_toTopOf="@+id/resultView"
         app:layout_constraintEnd_toEndOf="@+id/wpLatitudeText"
         app:layout_constraintStart_toStartOf="@+id/wpLatitudeText" />
+
+    <Button
+        android:id="@+id/BtnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="StopGPS"
+        app:layout_constraintBottom_toTopOf="@+id/wpLongitudeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="8dp"
+        android:text="StartGPS"
+        app:layout_constraintBottom_toTopOf="@+id/wpLongitudeText"
+        app:layout_constraintEnd_toStartOf="@+id/BtnStop"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="138dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/wpLongitudeText"
+        app:layout_constraintEnd_toStartOf="@+id/BtnStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
